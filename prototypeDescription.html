@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Career & Education Advisor | Prototype</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7f8fd;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .image-placeholder {
+            background-color: #f0f9ff;
+            border: 2px dashed #a5f3fc;
+            border-radius: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 250px;
+            font-weight: 500;
+            color: #22d3ee;
+            text-align: center;
+            padding: 1rem;
+            transition: all 0.3s ease;
+        }
+        .card {
+            background-color: rgb(157, 226, 237);
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="text-[#001219]">
+
+    <div class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
+
+        <header class="text-center my-16">
+            <h1 class="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-[#005f73] to-[#0a9396] bg-clip-text text-transparent pb-2">Career Advisor Prototype</h1>
+            <p class="mt-4 text-lg md:text-xl text-gray-500">Here is our Prototype Screenshots </p>
+        </header>
+
+        <main class="space-y-20">
+
+            <section class="card">
+                <h2 class="text-3xl font-bold text-center text-[#005f73] mb-8">Student's Journey Starts Here</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <p class="text-center text-gray-600">It begins with simple and secure account creation with basic Student's details </p>
+                          <div class="image-placeholder">
+        <img src="images/accCreationnew.jpg" alt="Create Account Page" class="max-w-full max-h-64 object-contain rounded-lg">
+      </div>
+                    </div>
+                     <div class="space-y-4">
+                        <p class="text-center text-gray-600">Just log in ,to jump right back into your personalized dashboard to  continue Studeny's path to discovery.</p>
+                        <div class="image-placeholder">
+        <img src="images/loginpage.jpg" alt="Create Account Page" class="max-w-full max-h-64 object-contain rounded-lg">
+      </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="card">
+                <h2 class="text-3xl font-bold text-center text-[#005f73] mb-8">Student's Path to Success</h2>
+               <div class="image-placeholder">
+        <img src="images/pathway.png" alt="Create Account Page" class="max-w-full max-h-64 object-contain rounded-lg">
+      </div>
+            </section>
+            
+             <section class="card">
+                <h2 class="text-3xl font-bold text-center text-[#005f73] mb-2">Discovering Interest</h2>
+                <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto"> Our insightful quizzes are designed to go beyond subjects, helping students to  discover their unique talents and passions. This is what powers student's personalized recommendations.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="image-placeholder">
+        <img src="images/quiz.jpg" alt="Create Account Page" class="max-w-full max-h-64 object-contain rounded-lg">
+      </div>
+      <div class="image-placeholder">
+        <img src="images/quiz1.jpg" alt="Create Account Page" class="max-w-full max-h-64 object-contain rounded-lg">
+      </div>
+                   
+                </div>
+                 <div class="mt-12">
+                    <h3 class="text-2xl font-bold text-center text-[#0a9396] mb-4">Personal Scoreboard</h3>
+                    <p class="text-center text-gray-600 mb-6 max-w-3xl mx-auto">Student's quiz report is more than just a score. It’s a detailed look at their strengths, showing them what they are great at and where they can grow.</p>
+                   <div class="image-placeholder">
+        <img src="images/quizreport.jpg" alt="Create Account Page" class="max-w-full max-h-64 object-contain rounded-lg">
+      </div>
+                </div>
+            </section>
+            
+             <section class="card">
+                <h2 class="text-3xl font-bold text-center text-[#005f73] mb-8">Explore colleges,courses,jobs,etc..</h2>
+                <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">Atfer student's strengths uncovered, they can explore handpicked database of courses, colleges, and study materials, all matched to their personal profile.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                   <div class="image-placeholder">
+        <img src="images/course.jpg" alt="Create Account Page" class="max-w-full max-h-64 object-contain rounded-lg">
+      </div>
+      <div class="image-placeholder">
+        <img src="images/course1.jpg" alt="Create Account Page" class="max-w-full max-h-64 object-contain rounded-lg">
+      </div>
+                  <div class="image-placeholder">
+        <img src="images/college.jpg" alt="Create Account Page" class="max-w-full max-h-64 object-contain rounded-lg">
+      </div>
+                    <div class="image-placeholder">
+        <img src="images/college1.jpg" alt="Create Account Page" class="max-w-full max-h-64 object-contain rounded-lg">
+      </div>
+                    <div class="image-placeholder">
+        <img src="images/recomclgs.jpg" alt="Create Account Page" class="max-w-full max-h-64 object-contain rounded-lg">
+      </div>
+                  <div class="image-placeholder">
+        <img src="images/resources.jpg" alt="Create Account Page" class="max-w-full max-h-64 object-contain rounded-lg">
+      </div>
+                </div>
+            </section>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <section class="card">
+                    <h2 class="text-2xl font-bold text-center text-[#005f73] mb-2">Finding their Passion</h2>
+                    <p class="text-center text-gray-600 mb-6">We making sure that they can find the academic stream that clicks with them.</p>
+                  <div class="image-placeholder">
+        <img src="images/chatbot.jpg" alt="Create Account Page" class="max-w-full max-h-64 object-contain rounded-lg">
+      </div>
+                </section>
+
+                <section class="card">
+                    <h2 class="text-2xl font-bold text-center text-[#005f73] mb-2">Student's Future in Science</h2>
+                     <p class="text-center text-gray-600 mb-6">Our system breaks down their career potential, showing them where they could make a real impact.</p>
+                    <div class="image-placeholder">
+        <img src="images/science.jpg" alt="Create Account Page" class="max-w-full max-h-64 object-contain rounded-lg">
+      </div>
+                </section>
+            </div>
+            
+            <section class="card">
+                <h2 class="text-3xl font-bold text-center text-[#005f73] mb-8">They are Not in This Alone</h2>
+                <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">The best journeys are shared. We connect them with similar interested students, experienced mentors, and professional counselors, so they will always have a strong support system.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="image-placeholder">
+        <img src="images/matches.jpg" alt="Create Account Page" class="max-w-full max-h-64 object-contain rounded-lg">
+      </div>
+                    <div class="image-placeholder">
+        <img src="images/homepage.jpg" alt="Create Account Page" class="max-w-full max-h-64 object-contain rounded-lg">
+      </div>
+                    <div class="image-placeholder">
+        <img src="images/mentor.jpg" alt="Create Account Page" class="max-w-full max-h-64 object-contain rounded-lg">
+      </div>
+                    <div class="image-placeholder">
+        <img src="images/counsil.jpg" alt="Create Account Page" class="max-w-full max-h-64 object-contain rounded-lg">
+      </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 class="text-3xl font-bold text-center text-[#005f73] mb-4">Guidance they Can Trust</h2>
+                <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">Great advice makes all the difference. That's why we've built a mentorship program centered on trust and quality, making sure they always get reliable, effective guidance.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div class="bg-slate-50 p-6 rounded-xl shadow-sm transform hover:scale-105 transition-transform">
+                        <div class="text-5xl mb-3">🛡️</div>
+                        <h3 class="text-lg font-bold text-[#005f73] mb-2">Verified Mentors</h3>
+                        <p class="text-gray-600 text-sm">We provide verified and experienced  mentor for their expertise, so they can be confident that there are learning from the best.</p>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-xl shadow-sm transform hover:scale-105 transition-transform">
+                         <div class="text-5xl mb-3">🏆</div>
+                        <h3 class="text-lg font-bold text-[#005f73] mb-2">Credit & Reward System</h3>
+                        <p class="text-gray-600 text-sm mb-4">Our mentors are motivated by a rating system that's driven by student feedback, encouraging top-tier guidance. So that even mentors  also will get benifit to boost their profile</p>
+                        <div class="bg-white p-4 rounded-lg shadow-inner text-left border-l-4 border-cyan-400">
+                            <p class="font-semibold">Prof. Ramesh Gupta</p>
+                            <p class="text-sm text-gray-500">Computer Science</p>
+                            <div class="flex items-center justify-between mt-2">
+                                <span class="text-yellow-400 text-lg">★★★★★</span>
+                                <span class="text-xs font-bold bg-green-100 text-green-800 py-1 px-2 rounded-full">50+ Students</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-xl shadow-sm transform hover:scale-105 transition-transform">
+                        <div class="text-5xl mb-3">✍️</div>
+                        <h3 class="text-lg font-bold text-[#005f73] mb-2">Transparent Feedback</h3>
+                        <p class="text-gray-600 text-sm">Student's voice matters. They can share their experience through our transparent feedback system to ensure quality and accountability.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 class="text-3xl font-bold text-center text-[#005f73] mb-8">Everything they Need, All in One Place</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-bold text-[#0a9396] text-center">Always in the Loop, Always Supported</h3>
+                        <p class="text-center text-gray-600">They can get quick answers from our friendly AI assistant, and never miss an important deadline or announcement with real-time updates.</p>
+                      <div class="image-placeholder">
+        <img src="images/chatbot2.jpg" alt="Create Account Page" class="max-w-full max-h-64 object-contain rounded-lg">
+      </div>
+                       <div class="image-placeholder">
+        <img src="images/timeline.jpg" alt="Create Account Page" class="max-w-full max-h-64 object-contain rounded-lg">
+      </div>
+                    </div>
+                    <div class="flex flex-col items-center justify-center space-y-8">
+                        <div class="flex flex-col items-center text-center p-6 rounded-lg bg-amber-50 w-full">
+                            <div class="text-5xl mb-3">📚</div>
+                            <h3 class="text-lg font-bold mb-2">Resource Library</h3>
+                            <p class="text-gray-600 text-sm">Access NCERT books, lab manuals, and quality study materials anytime.</p>
+                        </div>
+                         <div class="flex flex-col items-center text-center p-6 rounded-lg bg-red-50 w-full">
+                            <div class="text-5xl mb-3">❤️</div>
+                            <h3 class="text-lg font-bold mb-2">Safe Counseling</h3>
+                            <p class="text-gray-600 text-sm"> THey can connect with counselors in a private, confidential space. 24/7 help is available.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="text-center mt-20 mb-8">
+            <p class="text-gray-500">Crafting a brighter future for every student , one informed decision at a time.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        const brilliantBluesPalette = {
+            deepTeal: '#005f73',
+            lightTeal: '#0a9396',
+            mintGreen: '#94d2bd',
+            paleGold: '#e9d8a6',
+            amber: '#ee9b00',
+            darkOrange: '#ca6702',
+            burntOrange: '#bb3e03',
+            deepRed: '#ae2012',
+            darkRed: '#9b2226'
+        };
+
+        const chartColors = [
+            brilliantBluesPalette.deepTeal,
+            brilliantBluesPalette.lightTeal,
+            brilliantBluesPalette.mintGreen,
+            brilliantBluesPalette.amber,
+            brilliantBluesPalette.darkOrange,
+            brilliantBluesPalette.burntOrange
+        ];
+
+        function wrapLabel(label, maxWidth) {
+            const words = label.split(' ');
+            let lines = [];
+            let currentLine = words[0];
+
+            for (let i = 1; i < words.length; i++) {
+                if ((currentLine + ' ' + words[i]).length > maxWidth) {
+                    lines.push(currentLine);
+                    currentLine = words[i];
+                } else {
+                    currentLine += ' ' + words[i];
+                }
+            }
+            lines.push(currentLine);
+            return lines;
+        }
+
+        const tooltipTitleCallback = {
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                              return label.join(' ');
+                            } else {
+                              return label;
+                            }
+                        }
+                    }
+                }
+            }
+        };
+
+    </script>
+</body>
+</html>
+
